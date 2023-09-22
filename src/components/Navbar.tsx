@@ -58,16 +58,16 @@ const Navbar = () => {
         {/* MObile Menu */}
         <div className= {nav ? "sm:hidden absolute top-0 bottom-0 right-0 left-0 w-full h-screen flex items-center justify-center bg-black text-center ease-in duration-300 " : "sm:hidden absolute top-0 bottom-0 right-0 left-[-100%] w-full h-screen flex items-center justify-center bg-black text-center ease-in duration-300 "}>
           <ul>
-          <li className=" p-4 text-4xl hover:text-gray-500">
+          <li onClick={handleNav}  className=" p-4 text-4xl hover:text-gray-500">
             <Link href="/">Home</Link>
           </li>
-          <li className=" p-4 text-4xl hover:text-gray-500">
+          <li onClick={handleNav} className=" p-4 text-4xl hover:text-gray-500">
             <Link href="/#gallery">Gallery</Link>
           </li>
-          <li className=" p-4 text-4xl hover:text-gray-500">
+          <li onClick={handleNav}  className=" p-4 text-4xl hover:text-gray-500">
             <Link href="/work">Work</Link>
           </li>
-          <li className=" p-4 text-4xl hover:text-gray-500">
+          <li onClick={handleNav}  className=" p-4 text-4xl hover:text-gray-500">
             <Link href="/contact">Contact</Link>
           </li>
 
